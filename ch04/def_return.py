@@ -13,12 +13,13 @@ def add(x, y):  # 두 수를 더하는 함
     val = x + y
     return val
 
-#print(one_up())  #1
-#print(one_up())  #1
-# square() 호출
-print(square(2))  #4
+if __name__== "__main__":
+    #print(one_up())  #1
+    #print(one_up())  #1
+    # square() 호출
+    print(square(2))  #4
 
-result = square(3)
-print(result)     #9
+    result = square(3)
+    print(result)     #9
 
-print(add(3, 4))
+    print(add(3, 4))
