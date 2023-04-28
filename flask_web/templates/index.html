@@ -8,13 +8,16 @@
 <body>
     <div id="container">
         <header>
-            <h1>메인 페이지입니다.</h1>
+            <h1>메인 페이지</h1>
         </header>
         <section>
             <h3>주소 표시줄에 아래의 경로를 입력하세요</h3>
-            <p>http://127.0.0.1:5000/season -> 계절 출력</p>
+            <p><a link href="http://127.0.0.1:5000/season"> http://127.0.0.1:5000/season -> 계절 출력</a></p>
+            <p><a link href="http://127.0.0.1:5000/loopindex"> http://127.0.0.1:5000/loopindex -> loop.index 순번 출력</a></p>
+            <p><a link href="http://127.0.0.1:5000/even_odd"> http://127.0.0.1:5000/even_odd -> 짝수/홀수 판정</a></p>
+            <p><a link href="http://127.0.0.1:5000/register"> http://127.0.0.1:5000/register -> 회원 가입</a></p>
             <img src="{{ url_for('static', filename='coffee-blue.jpg')}}" alt="커피잔" id="pic">
-        </section>
+        </section> 
     <script>
         let pic = document.getElementById('pic')
         pic.onmouseover = changePic;
