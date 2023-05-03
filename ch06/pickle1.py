@@ -11,8 +11,8 @@ with open("./output/object.txt", "wb") as f:
     pickle.dump(dic, f)
 
 with open("./output/object.txt", "rb") as f:
-    a = pickle.load(f) # 읽기
+    # a = pickle.load(f) # 읽기
     dic = pickle.load(f)
 
-    print(a)
+    #print(a)
     print(dic)

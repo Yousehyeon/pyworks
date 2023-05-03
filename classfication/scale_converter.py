@@ -12,5 +12,5 @@ class ScaleConverter:
 
 if __name__=="__main__":
     con = ScaleConverter("inches", "mm", 25)
-    print("Converting 2 inches")  # 2인치 변환하기
-    print(str(con.convert(2)) + con.units_to) #50mm
+    print("Converting 3 inches")  # 2인치 변환하기
+    print(str(con.convert(3)) + con.units_to) #50mm

@@ -12,6 +12,9 @@
         </header>
         <section id="even_odd">
             <form action="" method="post">
+                {% if error_msg %}
+                    <p class="error">{{ error_msg }}</p>
+                {% endif %}
                 <p>
                     <label>숫자 입력 : </label>
                     <input type="text" name="num">
@@ -21,6 +24,7 @@
 
         </section>
     </div>
-<script src="{{ url_for('static', filename='main.js')}}"></script>
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
 </body>
 </html>
