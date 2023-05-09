@@ -17,7 +17,9 @@ def click():
     output.delete(0.0, END)
     #output.insert(END, winner)
     for i in winner:
-        output.insert(END, i + ' ')
+        output.insert(END, i + '')
+
+    output.insert(END, i + 'join(winner)')
 
 """
     # 구현 2
