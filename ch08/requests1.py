@@ -19,13 +19,15 @@ print(response2)
 urls = ['https://www.python.org/', 'https://www.daum.net/']
 filename = 'robots.txt'
 
-print(urls[0] + filename)
+# print(urls[0] + filename)
 
 for url in urls:
     url_path = url + filename
     print(url_path)
     response = requests.get(url_path)
     print(response)
+
+
 
 
 

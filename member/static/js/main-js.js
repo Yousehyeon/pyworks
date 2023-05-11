@@ -4,29 +4,32 @@ window.onload = function(){
 
     function setWatch(){
         let date = new Date()
-        let now = date.toLocaleTimeString();
+        let now = date.toLocaleTimeString();  // 시간 형식
         document.getElementById('demo').innerHTML = now
     }
 
-    // 배경 이미지 슬라이딩
+    //배경 이미지 슬라이딩
+    //경로 주의 - static 폴더에서 시작함
     let picture = [
-    "../static/images/bg1.jpg",
-    "../static/images/bg2.jpg",
-    "../static/images/bg3.jpg"
+        "../static/images/header1.jpg",
+        "../static/images/header2.jpg",
+        "../static/images/header3.jpg"
     ]
 
     let imgIdx = 0;
 
-    showPicture();
+    showPicture();   //showPicture() 함수 호출
 
     function showPicture(){
-        let img = document.getElementByID('pic');
-        img.src = picture[imgIdx]
-        imgIdx++;
-        if(imgIdx == picture.length){
-            imgIdx =0;
-        }
+       let img = document.getElementById('pic');
+       img.src = picture[imgIdx]  // 첫 이미지 저장
+       imgIdx++;
 
-        setTimeout(showPicture, 2000);
+       if(imgIdx == picture.length){ //imgIdx == 3
+          imgIdx = 0;
+       }
+
+       //1초 간격으로 showPicture() 호출
+       setTimeout(showPicture, 3000);
     }
 }
