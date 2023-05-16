@@ -6,11 +6,13 @@ def get_args():
         formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
 
+    # 아이템(인수)을 여러 개 전달(사용)
     parser.add_argument('item',
                         metavar='str',
                         nargs='+',   # 인수를 1개 이상 전달함
                         help='Item(s) to bring')
 
+    # -s, --sorted를 사용하면 정렬 기능을 사용
     parser.add_argument('-s',
                         '--sorted',
                         action='store_true',
@@ -26,7 +28,7 @@ def main():
 
     # 정렬 기능 구현
     if args.sorted:
-        items.sort()
+        items.sort() #오름차순 정렬
 
     bringing = ''
     if num == 1:  # 명령행의 인수가 1개이면
